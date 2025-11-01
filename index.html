@@ -2,30 +2,91 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>ONG Esperança Viva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Raízes do Amanhã</title>
   <link rel="stylesheet" href="atividade_2_CSS/style.css">
 </head>
 <body>
-  <header>
-    <h1>ONG Esperança Viva</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="projeto.html">Projetos</a>
-      <a href="cadastro.html">Cadastro</a>
-    </nav>
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo"> Raízes do Amanhã</h1>
+      <nav class="nav">
+        <button class="hamburger" aria-label="Abrir menu">&#9776;</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li>
+            <li><a href="projeto.html">Projetos</a></li
+            >
+          </li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Bem-vindo à nossa ONG!</h2>
-    <p>Trabalhamos para transformar vidas por meio de projetos sociais, educação e solidariedade.</p>
-    <img src="ong.jpg" alt="Imagem representando a ONG" width="500">
+  <main class="container">
+    <section class="intro col-12">
+      <h2>Bem-vindo à Raízes do Amanhã</h2>
+      <p>A ONG Raízes do Amanhã nasceu após uma forte enchente que evidenciou a urgência de proteger o meio ambiente. Diante da destruição, um grupo de jovens decidiu agir e transformar sua indignação em ação. Assim surgiu a ideia de criar uma organização que unisse educação ecológica com iniciativas práticas de regeneração ambiental.</p>
+
+      <p>Começamos com mutirões de limpeza, oficinas em escolas e campanhas de conscientização. O projeto <strong>Verde na Escola</strong> foi o primeiro grande passo, ensinando crianças a plantar hortas, cuidar do solo e entender o ciclo da água.</p>
+
+      <p>Com o tempo, a ONG se formalizou, conquistou apoio da comunidade e lançou novos projetos. A repercussão positiva levou a organização a apresentar seus resultados em eventos ambientais de grande alcance, ganhando visibilidade e novas parcerias.</p>
+    </section>
+
+    <section class="perfis col-12">
+      <h2>Perfis e Funcionalidades</h2>
+      <div class="grid-perfis">
+        <div class="perfil card">
+          <h3>Administrador</h3>
+          <ul>
+            <li>Gerenciar informações institucionais</li>
+            <li>Cadastrar e editar projetos</li>
+            <li>Acompanhar métricas de engajamento</li>
+            <li>Gerenciar voluntários e doações</li>
+          </ul>
+        </div>
+        <div class="perfil card">
+          <h3>Voluntário</h3>
+          <ul>
+            <li>Descobrir oportunidades de voluntariado</li>
+            <li>Candidatar-se a projetos</li>
+            <li>Acompanhar histórico de participação</li>
+            <li>Compartilhar experiências</li>
+          </ul>
+        </div>
+        <div class="perfil card">
+          <h3>Doador / Apoiador</h3>
+          <ul>
+            <li>Conhecer projetos e impactos</li>
+            <li>Realizar doações on-line</li>
+            <li>Acompanhar aplicação de recursos</li>
+            <li>Receber relatórios de transparência</li>
+          </ul>
+        </div>
+        <div class="perfil card">
+          <h3>Visitante</h3>
+          <ul>
+            <li>Conhecer a organização e seus projetos</li>
+            <li>Acessar informações de contato</li>
+            <li>Visualizar galeria de atividades</li>
+            <li>Compartilhar conteúdo em redes sociais</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ONG Esperança Viva</p>
+  <footer class="footer">
+    <p>&copy; 2025 Raízes do Amanhã</p>
   </footer>
-  
-<script src="atividade_3e4_JS/script.js"></script>
 
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+    hamburger.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
